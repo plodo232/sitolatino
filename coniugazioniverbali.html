@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Grammatica Latina</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+        .section-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            background: #fff;
+            border: 0px solid #ddd;
+            padding: 150px;
+            width: 45%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+    
+
+        .reviews-section {
+            width: 100%;
+            overflow: hidden;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .reviews-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .reviews-container {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+        .review {
+            flex: 0 0 80%;
+            max-width: 80%;
+            margin-right: 20px;
+            scroll-snap-align: start;
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .review:last-child {
+            margin-right: 0;
+        }
+        .review-content {
+            font-size: 16px;
+        }
+        .review-author {
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: static;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 1000px) {
+            .card {
+                align-self: center;
+                width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+ 
+            <h1>Grammatica latina</h1>
+            
+            <li><a href="index.html">Introduzione</a></li>
+            <li><a href="declinazioniecasi.html">Declinazioni e casi</a></li>
+            <li><a href="coniugazioniverbali.html">Coniugazioni verbali </a></li>
+
+
+
+
+
+
+        </ul>
+    </nav>
+    </header>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Modoindicativo">Modo indicativo</a></li>
+                <li><a href="#Modocongiuntivo">Modo congiuntivo</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    
+    <section id="Modoindicativo">
+        <div class="container">
+        <div class="section-title">
+        <h2>📌 TEMPI DELL’INDICATIVO</h2>
+    </div>
+    </div>
+        <div class="section-content">
+        <div class="card">
+        <p class="section-title"><strong>1️⃣ Presente indicativo</strong></p>
+        <p>Il presente indica un'azione che avviene nel momento in cui si parla.</p>
+        <p>Esempio (verbo amare)</p>
+        <table>
+            <thead>
+                <th>Persona</th>
+                <th>Attivo</th>
+                <th>Passivo</th> 
+            </thead>
+            <thead>
+                <th>1ª sing.</th>
+                <td>amō</td>
+                <td>amor</td> 
+            </thead>
+            <thead>
+                <th>2ª sing.</th>
+                <td>amās</td>
+                <td>amāris </td> 
+            </thead>
+            <thead>
+                <th>3ª sing.</th>
+                <td>amat</td>
+                <td>amātur</td> 
+            </thead>
+            <thead>
+                <th>1ª plur.</th>
+                <td>amāmus</td>
+                <td>amāmur</td> 
+            </thead>
+            <thead>
+                <th>2ª plur.</th>
+                <td>amātis</td>
+                <td>amāminī</td> 
+            </thead>
+            <thead>
+                <th>3ª plur.</th>
+                <td>amant</td>
+                <td>amantur</td> 
+            </thead>
+    </table>
+    <p>📌 Particolarità:</p>
+    <p>- Seconda persona singolare passiva: può terminare in -ris o -re (amāris / amāre).</p>
+    <p>- Le coniugazioni differiscono nel tema, es. moneo (monēre), lego (legere), audio (audire).</p>
+    
+    <p class="section-title"><strong>2️⃣ Imperfetto indicativo</strong></p>
+    <p>Il tempo imperfetto esprime un’azione passata abituale o in corso.</p>
+    <p>Esempio (amare)</p>
+    <table>
+        <thead>
+            <th>Persona</th>
+            <th>Attivo</th>
+            <th>Passivo</th> 
+        </thead>
+        <thead>
+            <th>1ª sing.</th>
+            <td>amābam</td>
+            <td>amābar</td> 
+        </thead>
+        <thead>
+            <th>2ª sing.</th>
+            <td>amābās</td>
+            <td>amābāris</td> 
+        </thead>
+        <thead>
+            <th>3ª sing.</th>
+            <td>amābat</td>
+            <td>amābātur</td> 
+        </thead>
+        <thead>
+            <th>1ª plur.</th>
+            <td>amābāmus</td>
+            <td>amābāmur</td> 
+        </thead>
+        <thead>
+            <th>2ª plur.</th>
+            <td>amābātis</td>
+            <td>amābāminī</td> 
+        </thead>
+        <thead>
+            <th>3ª plur.</th>
+            <td>amābant</td>
+            <td>amābantur</td> 
+        </thead>
+</table>
+        <p>📌 Particolarità:</p>
+        <p>- Si forma con il tema del presente + -ba- + desinenze personali.</p>
+        <p>- Coniugazione IV (-ire) e III (-ere) aggiungono -e- (audiebam).</p>
+
+        <p class="section-title"><strong>3️⃣ Futuro semplice</strong></p>
+        <p>Il futuro semplice indica un’azione futura.</p>
+        <p>Esempio (amare)</p>
+        <table>
+            <thead>
+                <th>Persona</th>
+                <th>Attivo</th>
+                <th>Passivo</th> 
+            </thead>
+            <thead>
+                <th>1ª sing.</th>
+                <td>amābō</td>
+                <td>amābor</td> 
+            </thead>
+            <thead>
+                <th>2ª sing.</th>
+                <td>amābis</td>
+                <td>amāberis </td> 
+            </thead>
+            <thead>
+                <th>3ª sing.</th>
+                <td>amābit</td>
+                <td>amābitur</td> 
+            </thead>
+            <thead>
+                <th>1ª plur.</th>
+                <td>amābimus</td>
+                <td>amābimur</td> 
+            </thead>
+            <thead>
+                <th>2ª plur.</th>
+                <td>amābimur</td>
+                <td>amābiminī</td> 
+            </thead>
+            <thead>
+                <th>3ª plur.</th>
+                <td>amābunt</td>
+                <td>amābuntur</td> 
+            </thead>
+    </table>
+        <p>📌 Particolarità:</p>
+        <p>- Prima e seconda coniugazione (-are, -ēre) usano -bo, -bis, -bit.</p>
+        <p>- Terza e quarta (-ere, -ire) usano -am, -es, -et (mittam, audiam).</p>
+
+        <p class="section-title"><strong>4️⃣ Perfetto indicativo</strong></p>
+        <p>Indica un’azione passata completata.</p>
+        <p>Attivo (usando la radice del perfetto: amāv-)</p>
+
+        <table>
+            <thead>
+                <th>Persona</th>
+                <th>Attivo</th>
+            </thead>
+            <thead>
+                <th>1ª sing.</th>
+                <td>amāvī</td>
+                
+            </thead>
+            <thead>
+                <th>2ª sing.</th>
+                <td>amāvistī</td>
+                
+            </thead>
+            <thead>
+                <th>3ª sing.</th>
+                <td>amāvit</td>
+                
+            </thead>
+            <thead>
+                <th>1ª plur.</th>
+                <td>amāvimus</td>
+                
+            </thead>
+            <thead>
+                <th>2ª plur.</th>
+                <td>amāvistis</td>
+                
+            </thead>
+            <thead>
+                <th>3ª plur.</th>
+                <td>amāvērunt </td>
+                
+            </thead>
+        </table>
+
+        <p>📌 Particolarità:</p>
+        <p>- 3ª plurale può avere forma arcaica in -ēre (amavēre).</p>
+        <p>- Il tema del perfetto varia:</p>
+            <p>- Con suffisso -v- (amāvī).</p>
+            <p>- Con raddoppiamento (dedi da do).</p>
+            <p>- Con cambiamento di vocale (vīcī da vinco).</p>
+
+            <p>Passivo (perifrastico con "sum")</p>
+
+            
+            <table>
+                <thead>
+                    <th>Persona</th>
+                    <th>Passivo</th>
+                </thead>
+                <thead>
+                    <th>1ª sing.</th>
+                    <td>amātus sum</td>
+                    
+                </thead>
+                <thead>
+                    <th>2ª sing.</th>
+                    <td>amātus es</td>
+                    
+                </thead>
+                <thead>
+                    <th>3ª sing.</th>
+                    <td>amātus est</td>
+                    
+                </thead>
+                <thead>
+                    <th>1ª plur.</th>
+                    <td>amātī sumus</td>
+                    
+                </thead>
+                <thead>
+                    <th>2ª plur.</th>
+                    <td>amātī estis</td>
+                    
+                </thead>
+                <thead>
+                    <th>3ª plur.</th>
+                    <td>amātī sunt</td>
+                    
+                </thead>
+            </table>
+
+            <p class="section-title"><strong>5️⃣ Piuccheperfetto indicativo</strong></p>
+            <p>Indica un’azione passata anteriore ad un’altra azione passata.</p>
+            <p>Attivo</p>
+            <table>
+                <thead>
+                    <th>Persona</th>
+                    <th>Attivo</th>
+                </thead>
+                <thead>
+                    <th>1ª sing.</th>
+                    <td>amāveram</td>
+                    
+                </thead>
+                <thead>
+                    <th>2ª sing.</th>
+                    <td>amāverās</td>
+                    
+                </thead>
+                <thead>
+                    <th>3ª sing.</th>
+                    <td>amāverat</td>
+                    
+                </thead>
+                <thead>
+                    <th>1ª plur.</th>
+                    <td>amāverāmus</td>
+                    
+                </thead>
+                <thead>
+                    <th>2ª plur.</th>
+                    <td>amāverātis</td>
+                    
+                </thead>
+                <thead>
+                    <th>3ª plur.</th>
+                    <td>amāverant</td>
+                    
+                </thead>
+            </table>
+            <p>Passivo</p>
+
+            <table>
+                <thead>
+                    <th>Persona</th>
+                    <th>Passivo</th>
+                </thead>
+                <thead>
+                    <th>1ª sing.</th>
+                    <td>amātus eram</td>
+                    
+                </thead>
+                <thead>
+                    <th>2ª sing.</th>
+                    <td>amātus erās</td>
+                    
+                </thead>
+                <thead>
+                    <th>3ª sing.</th>
+                    <td>amātus erat</td>
+                    
+                </thead>
+                <thead>
+                    <th>1ª plur.</th>
+                    <td>amātī erāmus</td>
+                    
+                </thead>
+                <thead>
+                    <th>2ª plur.</th>
+                    <td>amātī erātis</td>
+                    
+                </thead>
+                <thead>
+                    <th>3ª plur.</th>
+                    <td>amātī erant</td>
+                    
+                </thead>
+            </table>
+<p>📌 Particolarità:</p>
+<p>- Si forma con il perfetto + -eram (imperfetto di "sum").</p>
+
+<p class="section-title"><strong>6️⃣ Futuro anteriore</strong></p>
+<p>Indica un’azione futura che sarà compiuta prima di un’altra azione futura.</p>
+<p>Attivo</p>
+
+<table>
+    <thead>
+        <th>Persona</th>
+        <th>Attivo</th>
+    </thead>
+    <thead>
+        <th>1ª sing.</th>
+        <td>amāverō</td>
+        
+    </thead>
+    <thead>
+        <th>2ª sing.</th>
+        <td>amāveris</td>
+        
+    </thead>
+    <thead>
+        <th>3ª sing.</th>
+        <td>amāverit</td>
+        
+    </thead>
+    <thead>
+        <th>1ª plur.</th>
+        <td>amāverimus</td>
+        
+    </thead>
+    <thead>
+        <th>2ª plur.</th>
+        <td>amāveritis</td>
+        
+    </thead>
+    <thead>
+        <th>3ª plur.</th>
+        <td>amāverint</td>
+        
+    </thead>
+</table>
+<p>Passivo</p>
+
+<table>
+    <thead>
+        <th>Persona</th>
+        <th>Passivo</th>
+    </thead>
+    <thead>
+        <th>1ª sing.</th>
+        <td>amātus erō</td>
+        
+    </thead>
+    <thead>
+        <th>2ª sing.</th>
+        <td>amātus eris</td>
+        
+    </thead>
+    <thead>
+        <th>3ª sing.</th>
+        <td>amātus erit</td>
+        
+    </thead>
+    <thead>
+        <th>1ª plur.</th>
+        <td>amātī erimus</td>
+        
+    </thead>
+    <thead>
+        <th>2ª plur.</th>
+        <td>amātī eritis</td>
+        
+    </thead>
+    <thead>
+        <th>3ª plur.</th>
+        <td>amātī erunt</td>
+        
+    </thead>
+</table>
+<p>📌 Particolarità:</p>
+<p>- Si forma con il perfetto + futuro semplice di "sum".</p>
+<p>- Usato nelle proposizioni temporali con "cum" o "ubi" (cum amāveris, discedam → "quando avrai amato, me ne andrò").</p>
+
+<p class="section-title"><strong>📢 Riepilogo generale</strong></p>
+<p class="section-title">Tempi principali</p>
+<p>- <strong>Presente</strong> → Azione che accade ora.</p>
+<p>- <strong>Imperfetto</strong> → Azione passata abituale o in corso.</p>
+<p>- <strong>Futuro semplice</strong> → Azione futura.</p>
+<p>- <strong>Perfetto</strong> → Azione passata compiuta.</p>
+<p>- <strong>Piuccheperfetto</strong> → Azione passata prima di un’altra passata.</p>
+<p>- <strong>Futuro anteriore</strong> → Azione futura completata prima di un’altra futura.</p>
+
+
+
+</div>
+</div>
+</div>
+        </section>
+
+
+    <section id="Modocongiuntivo">
+        <div class="container">
+        <div class="section-title">
+        <h2>📌 TEMPI DEL CONGIUNTIVO</h2>
+    </div>
+    </div>
+        <div class="section-content">
+        <div class="card">
+        <p class="section-title"><strong>1️⃣ Congiuntivo Presente</strong></p>
+        <p>Indica un’azione possibile, desiderata o dubitativa.</p>
+        <p>Si usa la vocale tematica "a" per tutte le coniugazioni, tranne la prima (che usa "e").</p>
+
+        <table> 
+            <thead>
+            <th>Persona</th>
+            <th>Attivo </th>
+            <th>Passivo </th>
+            </thead>
+            <thead>
+            <th>1ª sing.</th>
+            <td>amem</td>
+            <td>amer</td>
+            </thead>
+            <thead>
+            <th>2ª sing.</th>
+            <td>amēs</td>
+            <td>amēris </td>
+            </thead>
+            <thead>
+            <th>3ª sing.</th>
+            <td>amet</td>
+            <td>amētur</td>
+            </thead>
+            <thead>
+            <th>1ª plur.</th>
+            <td>amēmus</td>
+            <td>amēmur</td>
+            </thead>
+            <thead>
+            <th>2ª plur.</th>
+            <td>amētis</td>
+            <td>amēminī</td>
+            </thead>
+            <thead>
+            <th>3ª plur.</th>
+            <td>ament</td>
+            <td>amentur</td>
+            </thead>
+            </table>
+
+            <p>📌 Particolarità:</p>
+            <p>- La 1ª coniugazione usa la -e- (amem), mentre le altre usano -a- (moneam, legam, audiam).</p>
+            <p><strong>- Usi principali:</strong></p>
+            <p>✅ Proposizioni finali (Ut veniat, te rogo → "Ti chiedo che venga").</p>
+            <p>✅ Proposizioni completive (Timeo ne cadat → "Temo che cada").</p>
+            <p>✅ Dubbio o esortazione (Nemo putet → "Nessuno pensi").</p>
+            
+            <p class="section-title"><strong>2️⃣ Congiuntivo Imperfetto</strong></p>
+            <p>Indica un’azione possibile o ipotetica nel passato, spesso subordinata a un'azione principale al passato.</p>
+            <p>Si forma dal tema del presente + desinenze dell’indicativo imperfetto.</p>
+
+            <table> 
+                <thead>
+                <th>Persona</th>
+                <th>Attivo </th>
+                <th>Passivo </th>
+                </thead>
+                <thead>
+                    <th>1ª sing.</th>
+                    <td>amārem</td>
+                    <td>amārer</td>
+                </thead>
+                
+               <thead>
+                <th>2ª sing.</th>
+                <td>amārēs</td>
+                <td>amārēris</td>
+               </thead>
+                
+                <thead>
+                <th>3ª sing.</th>
+                <td>amāret</td>
+                <td>amārētur</td>
+                </thead>
+                
+                <thead>
+                <th>1ª plur.</th>
+                <td>amārēmus</td>
+                <td>amārēmur</td>
+                </thead>
+                
+                <thead>
+                <th>2ª plur.</th>
+                <td>amārētis</td>
+                <td>amārēminī</td>
+                </thead>
+                <thead>
+                <th>3ª plur.</th>
+                <td>amārent</td>
+                <td>amārentur</td>
+                </thead>
+                </table>
+
+                <p>📌 Particolarità:</p>
+                <p>- Si usa nelle proposizioni ipotetiche irreali (Si venires, laetus essem → "Se tu venissi, sarei felice").</p>
+                <p><strong>- Usi principali:</strong></p>
+                <p>✅ Proposizioni finali e completive al passato (Rogavi ut veniret → "Chiesi che venisse").</p>
+                <p>✅ Periodo ipotetico della possibilità e dell’irrealità (Si hoc diceres, errāres → "Se dicessi questo, sbaglieresti").</p>
+                <p>✅ Dubbio o esortazione nel passato (Quis crederet? → "Chi avrebbe creduto?").</p>
+
+                <p class="section-title"><strong>3️⃣ Congiuntivo Perfetto</strong></p>
+                <p>Indica un’azione passata con valore di possibilità, dubbio o volontà.</p>
+                <p>Si forma dal tema del perfetto + -eri- + desinenze personali.</p>
+                <table> 
+                    <thead>
+                    <th>Persona</th>
+                    <th>Attivo </th>
+                    <th>Passivo </th>
+                    </thead>
+                    <thead>
+                    <th>1ª sing.</th>
+                    <td>amāverim</td>
+                    <td>amātus sim</td>
+                    </thead>
+                    
+                    <thead>
+                    <th>2ª sing.</th>
+                    <td>amāverīs</td>
+                    <td>amātus sis</td>
+                    </thead>
+                    
+                    <thead>
+                    <th>3ª sing.</th>
+                    <td>amāverit</td>
+                    <td>amātus sit</td>
+                    </thead>
+                    
+                    <thead>
+                    <th>1ª plur.</th>
+                    <td>amāverīmus</td>
+                    <td>amātī sīmus</td>
+                    </thead>
+                    
+                    <thead>
+                    <th>2ª plur.</th>
+                    <td>amāverītis</td>
+                    <td>amātī sītis</td>
+                    </thead>
+                    <thead>
+                    <th>3ª plur.</th>
+                    <td>amāverint</td>
+                    <td>amātī sint</td>
+                    </thead>
+                    </table>
+
+                    <p>📌 Particolarità:</p>
+                    <p>- Spesso nelle proposizioni completive al passato (Timeo ne dixerit → "Temo che abbia detto").</p>
+                    <p><strong>- Usi principali:</strong></p>
+                    <p>✅ Proposizioni consecutive (Tantum dixit ut crediderim → "Disse tanto che ho creduto").</p>
+                    <p>✅ Dubbio nel passato (Quis hoc crediderit? → "Chi avrà creduto a questo?").</p>
+                    <p>✅ Periodo ipotetico della possibilità passata (Si hoc feceris, bene erit → "Se avrai fatto questo, starà bene").</p>
+
+                    <p class="section-title"><strong>4️⃣ Congiuntivo Piuccheperfetto</strong></p>
+                    <p>Indica un’azione passata anteriore a un’altra azione passata.</p>
+                    <p>Si usa il tema del perfetto + -isse- + desinenze personali.</p>
+
+                    <table> 
+                        <thead>
+                        <th>Persona</th>
+                        <th>Attivo </th>
+                        <th>Passivo </th>
+                        </thead>
+                        <thead>
+                        <th>1ª sing.</th>
+                        <td>amāvissem</td>
+                        <td>amātus essem</td>
+                        </thead>
+                        
+                        <thead>
+                        <th>2ª sing.</th>
+                        <td>amāvissēs</td>
+                        <td>amātus essēs</td>
+                        </thead>
+                        
+                        <thead>
+                        <th>3ª sing.</th>
+                        <td>amāvisset</td>
+                        <td>amātus esset</td>
+                        </thead>
+                        
+                        <thead>
+                        <th>1ª plur.</th>
+                        <td>amāvissēmus</td>
+                        <td>amātī essēmus</td>
+                        </thead>
+                        
+                        <thead>
+                        <th>2ª plur.</th>
+                        <td>amāvissētis</td>
+                        <td>amātī essētis</td>
+                        </thead>
+                        <thead>
+                        <th>3ª plur.</th>
+                        <td>amāvissent</td>
+                        <td>amātī essent</td>
+                        </thead>
+                        </table>
+                        <p>📌 Particolarità:</p>
+                        <p>- Tipico delle ipotetiche irreali del passato (Si venisses, laetus fuissem → "Se tu fossi venuto, sarei stato felice").</p>
+                        <p><strong>- Usi principali:</strong></p>
+                        <p>✅ Periodo ipotetico dell’irrealità passata (Si hoc dixissem, erravissem → "Se lo avessi detto, avrei sbagliato").</p>
+                        <p>✅ Finali e consecutive al passato (Rogavi ut venisset → "Chiesi che fosse venuto").</p>
+                        <p>✅ Dubbio nel passato remoto (Quis hoc credidisset? → "Chi l'avrebbe mai creduto?").</p>
+
+                        <p class="section-title"><strong>📢 RIEPILOGO GENERALE</strong></p>
+                        <p>- Tempi e usi principali</p>
+
+                        <table> 
+                        <thead>
+                            <th>Tempo</th>
+                            <th>Formazione </th>
+                            <th>Uso principale </th>
+                            </thead>
+                            <thead>
+                            <th>Presente</th>
+                            <td>Tema presente + vocali tematiche + desinenze</td>
+                            <td>Desiderio, dubbio, possibilità</td>
+                            </thead>
+                            
+                            <thead>
+                            <th>Imperfetto</th>
+                            <td>Tema presente + -re- + desinenze</td>
+                            <td>Irrealità presente, finali e completive al passato</td>
+                            </thead>
+                            
+                            <thead>
+                            <th>Perfetto</th>
+                            <td>Tema perfetto + -eri- + desinenze</td>
+                            <td>Possibilità passata, periodo ipotetico futuro</td>
+                            </thead>
+                            <thead>
+                            <th>Piuccheperfetto</th>
+                            <td>Tema perfetto + -isse- + desinenze</td>
+                            <td>Irrealità passata, completive e finali</td>
+                        </thead>
+                        </table>
+</div>
+</div>
+</div>
+        </section>
+    
+</body>
+</html>

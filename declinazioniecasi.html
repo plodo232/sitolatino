@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Grammatica Latina</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+        .section-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 60px;
+            width: 45%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+    
+
+        .reviews-section {
+            width: 100%;
+            overflow: hidden;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .reviews-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .reviews-container {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+        .review {
+            flex: 0 0 80%;
+            max-width: 80%;
+            margin-right: 20px;
+            scroll-snap-align: start;
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .review:last-child {
+            margin-right: 0;
+        }
+        .review-content {
+            font-size: 16px;
+        }
+        .review-author {
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: static;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 1000px) {
+            .card {
+                align-self: center;
+                width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+ 
+            <h1>Grammatica latina</h1>
+            
+            <li><a href="index.html">Introduzione</a></li>
+            <li><a href="declinazioniecasi.html">Declinazioni e casi</a></li>
+            <li><a href="coniugazioniverbali.html">Coniugazioni verbali</a></li>
+
+        </ul>
+    </nav>
+    </header>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="1declinazione">Prima declinazione</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Declinazioni">
+        
+        <div class="container">
+        <div class="section-title">
+        <h2>📌Le declinazioni</h2>
+    </div>
+    </div>
+        <div class="section-content">
+        <div class="card">
+            
+            <p class="section-title"><strong>📌 PRIMA DECLINAZIONE </strong></p>
+            <p>La prima declinazione è caratterizzata dal tema in -a e comprende prevalentemente nomi femminili. 
+                Alcuni sostantivi maschili indicano professioni o ruoli (es. poëta, agricola, nauta).</p>
+        <table>
+            <thead>
+                <th>Caso</th>
+                <th>Singolare</th>
+                <th>Plurale</th>
+            </thead>
+            <thead>
+                <th>Nominativo</th>
+                <td>rosa</td>
+                <td>rosae</td>
+            </thead>
+            <thead>
+                <th>Genitivo</th>
+                <td>rosae</td>
+                <td>rosārum</td>
+            </thead>
+            <thead>
+                <th>Dativo</th>
+                <td>rosae</td>
+                <td>rosīs</td>
+            </thead>
+            <thead>
+                <th>Accusativo</th>
+                <td>rosam</td>
+                <td>rosās</td>
+            </thead>
+            <thead>
+                <th>Vocativo</th>
+                <td>rosa</td>
+                <td>rosae</td>
+            </thead>
+            <thead>
+                <th>Ablativo</th>
+                <td>rosā</td>
+                <td>rosīs</td>
+            </thead>
+        </table>
+        <p>📌 Particolarità:</p>
+        <p>Il genitivo singolare è in -ae, mentre il genitivo plurale è in -ārum.
+        </p>
+        <p>I sostantivi maschili hanno comunque aggettivi concordati al femminile.</p>
+        <p class="section-title"><strong>📌 SECONDA DECLINAZIONE</strong></p>
+        <p>Questa declinazione include nomi maschili e neutri.</p>
+        <table>
+            <thead>
+                <th>Caso</th>
+                <th>Singolare</th>
+                <th>Plurale</th>
+            </thead>
+            <thead>
+                <th>Nominativo</th>
+                <td>amicus</td>
+                <td>amici</td>
+            </thead>
+            <thead>
+                <th>Genitivo</th>
+                <td>amici</td>
+                <td>amicōrum</td>
+            </thead>
+            <thead>
+                <th>Dativo</th>
+                <td>amico</td>
+                <td>amicīs</td>
+            </thead>
+            <thead>
+                <th>Accusativo</th>
+                <td>amicum</td>
+                <td>amicos</td>
+            </thead>
+            <thead>
+                <th>Vocativo</th>
+                <td>amice</td>
+                <td>amici</td>
+            </thead>
+            <thead>
+                <th>Ablativo</th>
+                <td>amico</td>
+                <td>amicīs</td>
+            </thead>
+        </table>
+        <p>📌 Particolarità:</p>
+        <p>- Alcuni sostantivi in -er (puer, ager) mantengono la radice invariata, mentre altri la perdono (magister → magistrī).</p>
+        <p>Il vocativo singolare in -us cambia in -e (amicus → amice), ma non nei nomi in -er (puer → puer).</p>
+    
+        <p class="section-title"><strong>📌 TERZA DECLINAZIONE </strong></p>
+        <p>Comprende nomi di tutti e tre i generi con temi variabili.</p>
+        <p>- Consonantica (lex)</p>
+        <table>
+            <thead>
+                <th>Caso</th>
+                <th>Singolare</th>
+                <th>Plurale</th>
+            </thead>
+            <thead>
+                <th>Nominativo</th>
+                <td>lex</td>
+                <td>leges</td>
+            </thead>
+            <thead>
+                <th>Genitivo</th>
+                <td>legis</td>
+                <td>legum</td>
+            </thead>
+            <thead>
+                <th>Dativo</th>
+                <td>legī</td>
+                <td>legibus</td>
+            </thead>
+            <thead>
+                <th>Accusativo</th>
+                <td>legem</td>
+                <td>leges</td>
+            </thead>
+            <thead>
+                <th>Vocativo</th>
+                <td>lex</td>
+                <td>leges</td>
+            </thead>
+            <thead>
+                <th>Ablativo</th>
+                <td>lege</td>
+                <td>legibus</td>
+            </thead>
+        </table>
+        <p>- Temi in -i (civis)</p>
+        <table>
+            <thead>
+                <th>Caso</th>
+                <th>Singolare</th>
+                <th>Plurale</th>
+            </thead>
+            <thead>
+                <th>Nominativo</th>
+                <td>civis</td>
+                <td>cives</td>
+            </thead>
+            <thead>
+                <th>Genitivo</th>
+                <td>civis</td>
+                <td>civium</td>
+            </thead>
+            <thead>
+                <th>Dativo</th>
+                <td>civī</td>
+                <td>civibus</td>
+            </thead>
+            <thead>
+                <th>Accusativo</th>
+                <td>civem</td>
+                <td>cives</td>
+            </thead>
+            <thead>
+                <th>Vocativo</th>
+                <td>civis</td>
+                <td>cives</td>
+            </thead>
+            <thead>
+                <th>Ablativo</th>
+                <td>civī</td>
+                <td>civibus</td>
+            </thead>
+        </table>
+       <p>📌 Particolarità:</p> 
+       <p>- I nomi con tema in -i mantengono la -i- al genitivo plurale (civium) e ablativo singolare (civī).</p>
+       <p>- Alcuni nomi in -is, -es, -ns sono i-stem (es. urbs, urbis).</p>
+    
+       <p class="section-title"><strong>📌 QUARTA DECLINAZIONE</strong></p>
+       <p>Comprende maschili/femminili in -us e neutri in -u.</p>
+       <p>- Maschili/Femminili</p>
+       <table>
+        <thead>
+            <th>Caso</th>
+            <th>Singolare</th>
+            <th>Plurale</th>
+        </thead>
+        <thead>
+            <th>Nominativo</th>
+            <td>manus</td>
+            <td>manūs</td>
+        </thead>
+        <thead>
+            <th>Genitivo</th>
+            <td>manūs</td>
+            <td>manuum</td>
+        </thead>
+        <thead>
+            <th>Dativo</th>
+            <td>manuī</td>
+            <td>manibus</td>
+        </thead>
+        <thead>
+            <th>Accusativo</th>
+            <td>manum</td>
+            <td>manūs</td>
+        </thead>
+        <thead>
+            <th>Vocativo</th>
+            <td>manus</td>
+            <td>manūs</td>
+        </thead>
+        <thead>
+            <th>Ablativo</th>
+            <td>manū</td>
+            <td>manibus</td>
+        </thead>
+    </table>
+    
+    <p>📌 Particolarità:</p>
+    <p>- Genitivo singolare in -ūs, dativo singolare in -uī.</p>
+    <p>- Genitivo plurale -uum con la u conservata.</p>
+    
+    
+    <p>- Neutri (es. cornu)</p>
+    <table>
+        <thead>
+            <th>Caso</th>
+            <th>Singolare</th>
+            <th>Plurale</th>
+        </thead>
+        <thead>
+            <th>Nominativo</th>
+            <td>cornu</td>
+            <td>cornua</td>
+        </thead>
+        <thead>
+            <th>Genitivo</th>
+            <td>cornūs</td>
+            <td>cornuum</td>
+        </thead>
+        <thead>
+            <th>Dativo</th>
+            <td>cornū</td>
+            <td>cornibus</td>
+        </thead>
+        <thead>
+            <th>Accusativo</th>
+            <td>cornu</td>
+            <td>cornua</td>
+        </thead>
+        <thead>
+            <th>Vocativo</th>
+            <td>cornu</td>
+            <td>cornua</td>
+        </thead>
+        <thead>
+            <th>Ablativo</th>
+            <td>cornū</td>
+            <td>cornibus</td>
+        </thead>
+    </table>
+    
+    <p>📌 Particolarità:</p>
+    <p>- Neutri con nominativo/accusativo in -u e plurale in -ua.</p>
+    
+    <p class="section-title"><strong>📌 QUINTA DECLINAZIONE</strong></p>
+    
+    <table>
+        <thead>
+            <th>Caso</th>
+            <th>Singolare</th>
+            <th>Plurale</th>
+        </thead>
+        <thead>
+            <th>Nominativo</th>
+            <td>res</td>
+            <td>res</td>
+        </thead>
+        <thead>
+            <th>Genitivo</th>
+            <td>rei</td>
+            <td>rerum</td>
+        </thead>
+        <thead>
+            <th>Dativo</th>
+            <td>rei</td>
+            <td>rebus</td>
+        </thead>
+        <thead>
+            <th>Accusativo</th>
+            <td>rem</td>
+            <td>res</td>
+        </thead>
+        <thead>
+            <th>Vocativo</th>
+            <td>res</td>
+            <td>res</td>
+        </thead>
+        <thead>
+            <th>Ablativo</th>
+            <td>re</td>
+            <td>rebus</td>
+        </thead>
+    </table>
+    
+    <p>📌 Particolarità:</p>
+        <p>- Dativo e genitivo singolare in -ei.</p>
+        <p>- Dies (giorno) è l’unico nome frequentemente maschile.</p>
+    
+        <p class="section-title"><strong>📢 Conclusione</strong></p>
+        <p>Le declinazioni latine seguono schemi fissi ma hanno molte eccezioni. Ricorda:</p>
+        <p>✅ Nomi neutri hanno sempre nominativo = accusativo = vocativo.</p>
+        <p>✅ Genitivo singolare determina la declinazione (-ae, -i, -is, -ūs, -ei).</p>
+        <p>✅ Alcune declinazioni sono più regolari, altre hanno molte varianti.</p>
+    </div>
+    </div>
+    </div>
+    
+</body>
+</html>
